@@ -1,0 +1,78 @@
+.header {
+    background-color: cornflowerblue;
+    height: 2rem;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.middle-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.edit-btn {                         /* Кнопка Редактировать */
+    border: none; 
+    background-color: white;
+    color: darkgrey;
+    position: relative;
+    bottom: 50px;
+}
+
+.name-status {                      /* Имя и статус*/
+    display: flex;
+    justify-content: space-between
+}
+
+.right-bar {                        /* Правая часть */
+   width: 700px;
+}
+
+.brothers-sisters {                 /* Братья, сестры*/
+    display: flex;
+    
+}
+
+.brothers-sisters p {               /* Братья, сестры(текст)*/
+    color: darkgrey;
+}
+
+.brothers-sisters a {               /* Братья, сестры(ссылки)*/
+    position: relative;
+    top: 15px;
+    left: 90px;
+    text-decoration: none;
+}
+
+.people {                           /* Друзья, подписчики, фотографии*/
+    display: flex;
+    justify-content: center;
+}
+
+.detailed-information {             /* Показать подробную информацию*/
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 35px;
+}
+
+.change-status-btn {                /* Кнопка изменить статус */
+    border: none;
+    background-color: white;
+    position: relative;
+    bottom: 20px;
+    color: darkgrey;
+    right: 5px;
+}
+
+.detailed-information-btn {
+    border: none;
+    background-color: white;
+    position: relative;
+    color: blue;
+    right: 10px;
+}

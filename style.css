@@ -2,13 +2,88 @@ body {
   display: flex;
   flex-direction: column;
   background: #eeeff0;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   background: #4977a9;
-  
+  flex-basis: 40px;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 635px;
+}
+
+.logo-vk {
+  flex-basis: 32%;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  flex-basis: 16%;
+}
+
+
+
+input::-webkit-input-placeholder { 
+  color: #d9e2ec; 
+}
+
+.bell-btn {
+ flex-basis: 3%;
+}
+
+.music-btn {
+  flex-basis: 4%;
+}
+
+.header-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.search input {
+  padding: 6px 25px;
+  border-radius: 20px;
+  background: transparent;
+  border: none;
+  background-color: #224b7a;
+}
+
+.search input::before {
+  content: "%";
+}
+
+.bell-btn button{
+  margin: none;
+  padding: none;
+  border: none;
+  background: #4977a9;
+}
+
+.music-btn button{
+  margin: none;
+  padding: none;
+  border: none;
+  background: #4977a9;
+}
+
+.header-name>a {
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.header-name img {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
 }
 
 .content {
@@ -23,11 +98,59 @@ li {
 }
 
 .left-bar {
-  flex-basis: 635px;
+  flex-basis: 450px;
   margin: none;
   padding: none;
   border: none;
+  min-width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
 }
+
+li {
+  padding: 5px;
+  color: #285473;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#my-page::before {
+  content: url(png/home.png);
+  padding-right: 10px;
+}
+
+#news::before {
+  content: url(png/news.png);
+  padding-right: 10px;
+}
+
+#messages::before {
+  content: url(png/message.png);
+  padding-right: 10px;
+}
+
+#friends::before {
+  content: url(png/friends.png);
+  padding-right: 10px;
+}
+
+#groups::before {
+  content: url(png/groups.png);
+  padding-right: 10px;
+}
+
+#videos::before {
+  content: url(png/video.png);
+  padding-right: 10px;
+}
+
+#documents::before {
+  content: url(png/document.png);
+  padding-right: 7px;
+}
+
+
 
 .middle-bar {
   display: flex;
@@ -62,10 +185,12 @@ li {
 }
 
 h1 {
-  font-size: 20px;
-  line-height: 0;
-  padding-top: 10px;
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-top: 5px;
   padding-left: 15px;
+  margin-bottom: 0;
 }
 
 .my-name button {
@@ -73,6 +198,7 @@ h1 {
   background-color: white;
   padding-left: 15px;
   color: #939393;
+  font-size: 13px;
 }
 
 .my-name hr {
@@ -92,15 +218,16 @@ h1 {
   padding-left: 15px;
   line-height: 0px;
   color: #828282;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .brothers-sisters div{
-  padding-right: 90px;
+  padding-right: 115px;
+  font-size: 13px;
 }
 
 .show-information {
-  padding-left: 175px;
+  padding-left: 173px;
   padding-top: 15px;
 }
 
@@ -108,22 +235,41 @@ h1 {
   border: none;
   background-color: white;
   color: #2a5885;
+  font-size: 13px;
 }
 
 .people {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-top: 15px;
 }
 
 .people a {
-  font-size: 15px;
+  font-size: 13px;
   color: #828282;
+  display: inline-block;
+}
+
+.friends-number {
+  padding-left: 130px;
+}
+
+.subscribers-number {
+  
+}
+
+.photos-number {
+  padding-right: 130px;
 }
 
 span {
   color: #42648b;
   font-size: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 0;
 }
 
 .friends-number {

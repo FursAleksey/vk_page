@@ -27,7 +27,7 @@ body {
 
 
 
-input::-webkit-input-placeholder { 
+.search input::-webkit-input-placeholder { 
   color: #d9e2ec; 
 }
 
@@ -55,8 +55,8 @@ input::-webkit-input-placeholder {
   background-color: #224b7a;
 }
 
-.search input::before {
-  content: "%";
+.search input::after {
+  content: url(png/zoom.png);
 }
 
 .bell-btn button{
@@ -243,6 +243,7 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .people a {
@@ -253,10 +254,6 @@ h1 {
 
 .friends-number {
   padding-left: 130px;
-}
-
-.subscribers-number {
-  
 }
 
 .photos-number {
@@ -274,6 +271,67 @@ span {
 
 .friends-number {
   align-items: center;
+}
+
+.my-photos {
+  margin-top: 15px;
+  padding: 15px 0;
+  font-size: 13px;
+}
+
+.my-photos a {
+  color: black;
+}
+
+.my-photos div {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.what-is-new {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.what-is-new input {
+  padding-left: 15px;
+  border: none;
+  padding-right: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.what-is-new>img {
+  border-radius: 20px; 
+}
+
+.what-is-new a img {
+  padding: 0px 5px;
+}
+
+#document-icon {
+  padding-left: 25px;
+}
+
+.posts {
+  margin-top: 15px;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.posts button {
+  padding: 15px 0px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: white;
 }
 
 hr {
